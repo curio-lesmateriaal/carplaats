@@ -1,11 +1,57 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## installatie stappen:
+<ol>
+  <li>
+    <strong>Zorg ervoor dat je de benodigde software hebt geïnstalleerd:</strong>
+    <ul>
+      <li>PHP: Controleer of je PHP hebt geïnstalleerd en dat het voldoet aan de vereisten van Laravel. Laravel vereist PHP 7.3.0 of hoger.</li>
+      <li>Composer: Zorg ervoor dat je Composer hebt geïnstalleerd. Composer wordt gebruikt om de afhankelijkheden van het Laravel-project te beheren.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Navigeer naar de gewenste directory waar je het Laravel-project wilt installeren:</strong>
+    <pre><code>cd jouw/project/directory</code></pre>
+  </li>
+  <li>
+    <strong>Clone het GitHub-project:</strong>
+    <pre><code>git clone &lt;repository_url&gt;</code></pre>
+  </li>
+  <li>
+    <strong>Navigeer naar de gekloonde repository:</strong>
+    <pre><code>cd laravel-project</code></pre>
+  </li>
+  <li>
+    <strong>Voer de "composer install" opdracht uit om de afhankelijkheden van het project te installeren:</strong>
+    <pre><code>composer install</code></pre>
+    <p>Dit zal alle vereiste pakketten en afhankelijkheden downloaden en installeren op basis van het <code>composer.json</code>-bestand van het Laravel-project.</p>
+  </li>
+  <li>
+    <strong>Maak een kopie van het ".env.example"-bestand en hernoem het naar ".env":</strong>
+    <pre><code>cp .env.example .env</code></pre>
+  </li>
+  <li>
+    <strong>Genereer een applicatiesleutel met behulp van de "key:generate" opdracht van Artisan:</strong>
+    <pre><code>php artisan key:generate</code></pre>
+    <p>Deze opdracht genereert een unieke sleutel die wordt gebruikt voor het versleutelen van diverse gegevens in je Laravel-project.</p>
+  </li>
+  <li>
+    <strong>Configureer de databaseverbinding in het ".env"-bestand:</strong>
+    <ul>
+      <li>Open het ".env"-bestand in een teksteditor.</li>
+      <li>Zoek de sectie <code>DB_CONNECTION</code> en zorg ervoor dat deze overeenkomt met het type database dat je wilt gebruiken, bijvoorbeeld <code>mysql</code>, <code>pgsql</code>, <code>sqlite</code>, enz.</li>
+      <li>Configureer de databasegegevens zoals <code>DB_HOST</code>, <code>DB_PORT</code>, <code>DB_DATABASE</code>, <code>DB_USERNAME</code> en <code>DB_PASSWORD</code> volgens je eigen database-instellingen.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Voer de database migraties uit:</strong>
+    <pre><code>php artisan migrate</code></pre>
+    <p>Deze opdracht zal de database-tabellen maken op basis van de migratiebestanden in het Laravel-project.</p>
+  </li>
+  <li>
+    <strong>Start de lokale ontwikkelingsserver:</strong>
+    <pre><code>php artisan serve</code></pre>
+    <p>Dit zal de ontwikkelingsserver starten, meestal op <code>http://localhost:8000</code>. Je kunt nu je Laravel-project bekijken in je webbrowser.</p>
+  </li>
+</ol>
 
 ## About Laravel
 
